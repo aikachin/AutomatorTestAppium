@@ -19,7 +19,7 @@ import java.net.URL;
  * @Date: Created in 14:46 2017/11/21 0021.
  * @Modified by :
  */
-@Listeners({com.example.base.AssertionListener.class})
+@Listeners({AssertionListener.class})
 public class InitAppium {
 //    调试设置名
     public static String deviceName = "121.0.0.1:52001";
@@ -27,6 +27,7 @@ public class InitAppium {
     public static String platformVersion = "4.4.2";
 //    app路径
     public static String appPath = System.getProperty("user.dir") + "/apps/FirstShop-release.apk";  // firstshop.apk
+//     public static String appPath = "F:\\workspaceForIDEA\\AutomatorTestAppium\\apps\\FirstShop-release.apk";
 //    包名
     public static String appPackage = "com.firstshop";
 //    是否需要重新安装
@@ -68,6 +69,7 @@ public class InitAppium {
      */
     @BeforeSuite
     public void beforeSuite() throws MalformedURLException {
+        print(System.getProperty("user.dir"));
         DesiredCapabilities dc = new DesiredCapabilities();
         // web 浏览器名称（'Safari' ,'Chrome'等）。如果对应用进行自动化测试，这个关键字的值应为空。
         dc.setCapability("browserName", "");

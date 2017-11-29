@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testLogin"
+           tests="3"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="49.183">
+  <properties />
+            <testcase name="loginErrorType" time="6.872" classname="com.example.cases.testLogin">
+                <failure type="java.lang.Throwable"
+                  message="(null)"
+              >
+<![CDATA[java.lang.Throwable
+  
+报错信息：账号对密码错误是否登录成功 expected [false] but found [true].
+报错方法名：loginErrorType(
+报错类：testLogin
+报错行号：:42)
+  com.example.cases.testLogin.loginErrorType(testLogin.java:42)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="loginErrorPwd" time="9.899" classname="com.example.cases.testLogin">
+                <failure type="java.lang.Throwable"
+                  message="(null)"
+              >
+<![CDATA[java.lang.Throwable
+  
+报错信息：账号对密码错误是否登录成功 expected [false] but found [true].
+报错方法名：loginErrorPwd(
+报错类：testLogin
+报错行号：:32)
+  com.example.cases.testLogin.loginErrorPwd(testLogin.java:32)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="loginConfirm" time="32.412" classname="com.example.cases.testLogin" />
+      
+</testsuite>

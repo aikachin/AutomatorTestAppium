@@ -27,9 +27,9 @@ public class testLogin extends InitAppium{
      * 测试帐号对 密码不对情况
      */
     @Test(priority = 0)
-    public void loginErrorUser() {
+    public void loginErrorPwd() {
         boolean flag = loginOperation.login("18096600175", "123456", "Onigokko");
-        Assertion.verifyEquals(flag, true, "账号对密码错误是否登录成功");
+        Assertion.verifyEquals(flag, false, "账号对密码错误是否登录成功");
         print("账号密码错误情况登录：" + flag);
     }
 
@@ -38,17 +38,17 @@ public class testLogin extends InitAppium{
      */
     @Test(priority = 1)
     public void loginErrorType() {
-        boolean flag = loginOperation.login("18096600175", "123456", "Onigokko");
-        Assertion.verifyEquals(flag, true, "账号对密码错误是否登录成功");
-        print("账号对密码错误情况登录：" + flag);
+        boolean flag = loginOperation.login("18096600175", "123", "Onigokko");
+        Assertion.verifyEquals(flag, false, "账号对密码错误是否登录成功");
+        print("账号对密码规格错误情况登录：" + flag);
     }
 
     /**
-     * 测试帐号密码规格不对情况
+     * 测试帐号密码正确情况
      */
     @Test(priority = 2)
     public void loginConfirm() {
-        boolean flag = loginOperation.login("18096600175", "a123456", "Onigokko");
+        boolean flag = loginOperation.login("15195001846", "a123456", ".缺感");
         Assertion.verifyEquals(flag, true, "账号密码正确是否登录成功");
         print("账号密码正确情况登录：" + flag);
     }

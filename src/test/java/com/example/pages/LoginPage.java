@@ -39,7 +39,7 @@ public class LoginPage extends PageAppium{
     // 登录页面标识
     public final String LOGIN_PAGE_TITLE_PATH = "//android.widget.EditText[contains(@text, '登录')]";
     // 首页主activity
-    public final String MAIN_ACTIVITY = "MainFragementActivity";
+    // public final String MAIN_ACTIVITY = "MainFragementActivity";
     // 底部导航菜单id
     public final String BOTTOM_MENU_ELEMENT_ID = "tab_itme_txt";
 
@@ -73,9 +73,9 @@ public class LoginPage extends PageAppium{
      * 获取主页面的activity的名字
      * @return
      */
-    public String getMainAcrtivity() {
-        return MAIN_ACTIVITY;
-    }
+    // public String getMainActivity() {
+    //     return MAIN_ACTIVITY;
+    // }
 
     // 获取页面控件——开始
     public AndroidElement getCancelButton() {

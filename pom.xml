@@ -81,32 +81,32 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>res/testNG.xml</suiteXmlFile>
+                        <suiteXmlFilefile>res/testNG.xml</suiteXmlFilefile>
                     </suiteXmlFiles>
-                    <!-- 					<properties>
+                    <!--                     					<properties>
 
-                                            <property>
+                                                                <property>
 
-                                                <name>usedefaultlisteners</name>
+                                                                    <name>usedefaultlisteners</name>
 
-                                                <value>false</value>
+                                                                    <value>false</value>
 
-                                            </property>
+                                                                </property>
 
-                                            <property>
+                                                                <property>
 
-                                                <name>listener</name>
+                                                                    <name>listener</name>
 
-                                                <value>org.uncommons.reportng.HTMLReporter,
+                                                                    <value>org.uncommons.reportng.HTMLReporter,
 
-                                                    org.uncommons.reportng.JUnitXMLReporter</value>
+                                                                        org.uncommons.reportng.JUnitXMLReporter</value>
 
-                                            </property>
+                                                                </property>
 
-                                        </properties> -->
+                                                            </properties>-->
 
-                    <workingDirectory>target/</workingDirectory>
-
+                    <!--<workingDirectory>target/</workingDirectory>-->
+                    <!--       <forkMode>always</forkMode>-->
                 </configuration>
 
             </plugin>
@@ -122,7 +122,7 @@
                     <target>1.8</target>
                     <compilerArgs>
                         <arg>-Xlint:unchecked</arg>
-                        <arg>-Xlint:deprecation </arg>
+                        <arg>-Xlint:deprecation</arg>
                         <!--<arg>endorseddirs=${endorsed.dir}</arg>-->
                     </compilerArgs>
                 </configuration>

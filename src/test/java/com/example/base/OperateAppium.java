@@ -28,7 +28,7 @@ public class OperateAppium {
 //    多个触摸操作时间
     MultiTouchAction multiTouchAction;
 
-    private static int WAIT_TIME = 10;  // 默认的等待控件时间
+    private static int WAIT_TIME = 20;  // 默认的等待控件时间
 
     private final int SWIPE_DEFAULT_PERCENT = 5;    // 默认滑动百分比
 
@@ -36,6 +36,11 @@ public class OperateAppium {
                                 SWIP_DOWN = "DOWN",
                                 SWIP_LEFT = "LEFT",
                                 SWIP_RIGHT = "RIGHT";
+
+    public final int LOGIN_ALREADY = -1;    //已经登录
+    public final int LOGIN_NEED = 0;    //需要登录
+    public final int LOGIN_SUCCESS = 1; //登录成功
+    public final int LOGIN_FAILED = 2;  //登录失败
 
     public OperateAppium(AndroidDriver androidDriver) {
         this.driver = androidDriver;

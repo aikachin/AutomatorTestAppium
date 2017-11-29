@@ -15,7 +15,7 @@ public class MyPage extends PageAppium {
     // 昵称
     public final String NICK_NAME_ID = "usename";
     // 设置选项文字“设置”
-    public final String SETTING_TEXT = "android.widget.TextView";
+    public final String SETTING_TEXT = "设置";   // android.widget.TextView
     // 底部导航菜单id
     public final String BOTTOM_MENU_ELEMENT_ID = "tab_itme_txt";
 

@@ -19,7 +19,7 @@ public class MainPage extends PageAppium {
     // 退出弹框取消id
     public final String QUIT_CANCEL_ID = "negative";
     // 首页主activity
-    public final String MAIN_ACTIVITY = "mian.MainFragementActivity";
+    public final String MAIN_ACTIVITY = "MainFragementActivity";
     // // 启动activity
     // public final String SPLASH_ACTIVITY = "SplashActivity";
 

@@ -11,6 +11,6 @@ public class test1 {
     public static void main(String[] args) {
         String a = "1234.5.678";
         String str = a.substring(a.lastIndexOf(".") + 1);
-        System.out.println(str);
+        System.out.println(str);    // 输出678
     }
 }
